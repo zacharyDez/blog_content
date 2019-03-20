@@ -12,7 +12,7 @@ I am a tutor asked me to help him with the following exercise.
 
 #### The problem to be resolved was presented in the following manner:
 
-Write a program that respects the following rules:
+Write a program that generates a password respecting the following conditions:
 
 1. Contains at least one uppercase and lowercase letter
 2. Contains at least one number
@@ -25,11 +25,11 @@ The student had no difficulty understanding the problem, he had established clea
 but it was difficult to read, partially hardcoded and longer than necessary. Yet the solution worked and is part of a 
 normal learning process to writing better code in the future. 
 
-The trouble I found the student was having (and one I constantly go through) is that he had a low volume of quality 
-code examples he had read. 
+The trouble I found the student was having (and one I constantly go through) 
+was missing experience reading quality code examples.
 
 The objective is to explain practical code examples more in depth that will help students grasp certain programming 
-concepts so they can apply them to their specific domain. Hopefully, starting some thoughts on not just developing programs
+concepts. Hopefully, starting some reflexions on not just developing programs
 that work (for a moment in time) but programs that are somewhat optimized and easier to maintain in the future.
 
 
@@ -112,11 +112,9 @@ This is far from optimal and simply boring.
 Knowing some standard library tricks is always helpful in this situation.
 
 For the numbers category, we are using a list comprehension to cast elements of our in range statement to strings. 
-List comprehensions are powerful tools that are extremely helpful in many situations.
-
-*Real Python have some interesting content on list comprehensions and generators 
-([list comprehensions](https://realpython.com/lessons/writing-your-first-list-comprehension/), 
-[generators](https://realpython.com/introduction-to-python-generators/))*.
+List comprehensions are powerful, read more about them: 
+*[list comprehensions](https://realpython.com/lessons/writing-your-first-list-comprehension/), 
+[generators](https://realpython.com/introduction-to-python-generators/)*.
 
 The symbols were already explicitly entered in the problem description: 
 we simply copied and paste them and applied the 'split' string method to convert it to a list.
@@ -158,9 +156,9 @@ while 0 in count.values():
 
 The idea is the following:
 1. Create a count dictionary containing our categories
-2. Initialized are password to an empty string
+2. Initialize the password to an empty string
 4. Iterate password_length number of times to:
-    - Pick a random element of a random category (using)
+    - Pick a random element of a random category (using choice() function)
     - Add the element to the password
     - Add one to the pick category
 5. The while loop will be executed again if the password does not match the conditions (low probability)
@@ -171,7 +169,7 @@ Since Python 3, there is no longer that trade-off. Dictionaries are simply more 
 
 ## Conclusion
 
-This was practical example to introduce python exception handling. 
+This was a practical example to introduce Python exception handling. 
 
 If you have any other questions or comments on the post do not hesitate to reach out!
 
