@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="63811e9f-5fc6-44b8-a1c1-54b36ba94288" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/en/python-exception-handling-intro/python-exception-handling-intro.MD" beforeDir="false" afterPath="$PROJECT_DIR$/en/python-exception-handling-intro/python-exception-handling-intro.MD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/en/python-exception-handling-intro/generate_password.py" beforeDir="false" afterPath="$PROJECT_DIR$/python-exception-handling-intro/generate_password.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/en/python-exception-handling-intro/python-exception-handling-intro.MD" beforeDir="false" afterPath="$PROJECT_DIR$/python-exception-handling-intro/python-exception-handling-intro.MD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fr/python-gestion-exceptions-intro/generer_mot_passe.py" beforeDir="false" afterPath="$PROJECT_DIR$/python-exception-handling-intro/generer_mot_passe.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,47 +18,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/en/python-exception-handling-intro/generate_password.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
-              <caret line="47" column="39" selection-start-line="47" selection-start-column="39" selection-end-line="47" selection-end-column="39" />
-              <folding>
-                <element signature="e#0#25#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/en/python-exception-handling-intro/python-exception-handling-intro.MD">
+        <entry file="file://$PROJECT_DIR$/shell-cl-intro/shell-cl-intro-en.MD">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="229">
-                <caret line="160" column="73" selection-start-line="160" selection-start-column="73" selection-end-line="160" selection-end-column="73" />
+              <first_editor relative-caret-position="446">
+                <caret line="77" column="39" selection-start-line="77" selection-start-column="39" selection-end-line="77" selection-end-column="39" />
               </first_editor>
               <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fr/python-gestion-exceptions-intro/generer_mot_passe.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="750">
-              <caret line="51" column="32" selection-start-line="51" selection-start-column="32" selection-end-line="51" selection-end-column="32" />
-              <folding>
-                <element signature="e#0#25#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -73,6 +42,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>.gitignore</find>
+      <find>initialied</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -85,18 +55,19 @@
         <option value="$PROJECT_DIR$/python-exception-handling-intro/generate_password.py" />
         <option value="$PROJECT_DIR$/en/python-exception-handling-intro/generate_password.py" />
         <option value="$PROJECT_DIR$/fr/python-gestion-exceptions-intro/generer_mot_passe.py" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/en/python-exception-handling-intro/python-exception-handling-intro.MD" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/shell-cl-intro/shell-cl-intro-en.MD" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="1280" />
-    <option name="y" value="-280" />
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
+    <option name="width" value="1280" />
+    <option name="height" value="800" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -112,13 +83,12 @@
             <path>
               <item name="blog_content" type="b2602c69:ProjectViewProjectNode" />
               <item name="blog_content" type="462c0819:PsiDirectoryNode" />
-              <item name="en" type="462c0819:PsiDirectoryNode" />
+              <item name="python-exception-handling-intro" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="blog_content" type="b2602c69:ProjectViewProjectNode" />
               <item name="blog_content" type="462c0819:PsiDirectoryNode" />
-              <item name="en" type="462c0819:PsiDirectoryNode" />
-              <item name="python-exception-handling-intro" type="462c0819:PsiDirectoryNode" />
+              <item name="shell-cl-intro" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -134,14 +104,14 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/en" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/python-exception-handling-intro" />
+      <recent name="$PROJECT_DIR$/en" />
       <recent name="$PROJECT_DIR$/python-exception-handling-intro/en" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -197,18 +167,18 @@
       <updated>1553024726182</updated>
       <workItem from="1553024732644" duration="5965000" />
       <workItem from="1553045121842" duration="1570000" />
-      <workItem from="1553102318900" duration="1084000" />
+      <workItem from="1553102318900" duration="4651000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8619000" />
+    <option name="totallyTimeSpent" value="12186000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1280" y="-280" width="1920" height="1080" extended-state="0" />
+    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2550586" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1987076" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -222,7 +192,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32970297" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.09452055" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -236,7 +206,7 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/en/python-exception-handling-intro/generer_mot_de_passe.py" />
-    <entry file="file://$PROJECT_DIR$/en/python-exception-handling-intro/generate_password.py">
+    <entry file="file://$PROJECT_DIR$/python-exception-handling-intro/generate_password.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="690">
           <caret line="47" column="39" selection-start-line="47" selection-start-column="39" selection-end-line="47" selection-end-column="39" />
@@ -246,9 +216,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fr/python-gestion-exceptions-intro/generer_mot_passe.py">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
+        <state>
+          <caret column="6" selection-start-column="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python-exception-handling-intro/python-exception-handling-intro.MD">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="229">
+            <caret line="160" column="31" selection-end-line="182" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python-exception-handling-intro/generer_mot_passe.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="584">
           <caret line="51" column="32" selection-start-line="51" selection-start-column="32" selection-end-line="51" selection-end-column="32" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
@@ -256,18 +243,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/en/python-exception-handling-intro/python-exception-handling-intro.MD">
+    <entry file="file://$PROJECT_DIR$/shell-cl-intro/shell-cl-intro-en.MD">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="229">
-            <caret line="160" column="73" selection-start-line="160" selection-start-column="73" selection-end-line="160" selection-end-column="73" />
+          <first_editor relative-caret-position="446">
+            <caret line="77" column="39" selection-start-line="77" selection-start-column="39" selection-end-line="77" selection-end-column="39" />
           </first_editor>
           <second_editor />
         </state>
