@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="63811e9f-5fc6-44b8-a1c1-54b36ba94288" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python-exception-handling-intro/python-exception-handling-intro.MD" beforeDir="false" afterPath="$PROJECT_DIR$/python-exception-handling-intro/python-exception-handling-intro.MD" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shell-cl-intro/shell-cl-intro-en.MD" beforeDir="false" afterPath="$PROJECT_DIR$/shell-cl-intro/shell-cl-intro-en.MD" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,10 +20,22 @@
         <entry file="file://$PROJECT_DIR$/shell-cl-intro/shell-cl-intro-en.MD">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="431">
-                <caret line="203" column="12" selection-start-line="203" selection-start-column="12" selection-end-line="203" selection-end-column="12" />
+              <first_editor relative-caret-position="558">
+                <caret line="527" lean-forward="true" selection-start-line="527" selection-end-line="527" />
               </first_editor>
               <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/python-exception-handling-intro/generate_password.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="362">
+              <caret line="43" column="26" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -33,8 +44,8 @@
         <entry file="file://$PROJECT_DIR$/python-exception-handling-intro/python-exception-handling-intro.MD">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="236">
-                <caret line="73" lean-forward="true" selection-start-line="73" selection-end-line="80" selection-end-column="3" />
+              <first_editor relative-caret-position="1095">
+                <caret line="73" selection-start-line="73" selection-end-line="80" selection-end-column="3" />
               </first_editor>
               <second_editor />
             </state>
@@ -183,18 +194,20 @@
       <workItem from="1553024732644" duration="5965000" />
       <workItem from="1553045121842" duration="1570000" />
       <workItem from="1553102318900" duration="5562000" />
-      <workItem from="1553176523288" duration="2897000" />
+      <workItem from="1553176523288" duration="3333000" />
+      <workItem from="1553186756155" duration="308000" />
+      <workItem from="1553189646981" duration="5569000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15994000" />
+    <option name="totallyTimeSpent" value="22307000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1280" y="-280" width="1920" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13312034" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13525027" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -222,16 +235,6 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/en/python-exception-handling-intro/generer_mot_de_passe.py" />
-    <entry file="file://$PROJECT_DIR$/python-exception-handling-intro/generate_password.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="47" column="39" selection-start-line="47" selection-start-column="39" selection-end-line="47" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -252,18 +255,28 @@
     <entry file="file://$PROJECT_DIR$/python-exception-handling-intro/python-exception-handling-intro.MD">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="236">
-            <caret line="73" lean-forward="true" selection-start-line="73" selection-end-line="80" selection-end-column="3" />
+          <first_editor relative-caret-position="1095">
+            <caret line="73" selection-start-line="73" selection-end-line="80" selection-end-column="3" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python-exception-handling-intro/generate_password.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="43" column="26" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/shell-cl-intro/shell-cl-intro-en.MD">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="431">
-            <caret line="203" column="12" selection-start-line="203" selection-start-column="12" selection-end-line="203" selection-end-column="12" />
+          <first_editor relative-caret-position="558">
+            <caret line="527" lean-forward="true" selection-start-line="527" selection-end-line="527" />
           </first_editor>
           <second_editor />
         </state>
