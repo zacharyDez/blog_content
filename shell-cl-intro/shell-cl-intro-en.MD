@@ -11,7 +11,7 @@ Contenu initalement publié sur [mon site](zacharydeziel.com)
 
 ##### Objectifs:
 - Comprendre les liens entre les usagers et l'ordinateur
-- Comprendre pourquoi et quand les lignes de commandes sont plus adaptées que des interfaces graphiques
+- Comprendre quand et pourquoi les lignes de commandes sont plus adaptées que des interfaces graphiques
 
 #### Contexte
 
@@ -37,7 +37,12 @@ Quand une commande est saisie, elle est évaluer et ensuite une sortie (résulta
 ## Définition du Shell
 
 Le Shell est un programme qui utilise d'autres programmes pour exécuter les calculs au lieu de l'effectuer lui même. 
-Il y a plusieurs Shell qui existe. Bash est le shell par défaut des systèmes d'opérations Unix and de plusieurs extensions du Shell sur Windows.
+Il y a plusieurs Shell qui existe. 
+Bash est le shell par défaut des systèmes d'opérations Unix and de plusieurs extensions du Shell sur Windows.
+
+Python a un shell intéractif qui utilise le même principe: le shell appel l'interpréteur Python pour exécuter les commandes.
+C'est un outil important pour expérimenter avec des solutions potentiels pour des programmes. 
+Très utilisé pour l'exploration de jeux de donnés.
 
 #TODO: Insérer image du Shell: example ls avec sortie
 
@@ -58,7 +63,7 @@ Si la commande n'est pas trouvée, des messages d'erreurs seront imprimées comm
 #### Différence avec un GUI
 
 Un GUI vous présente des options et vous êtes limités par ces options.
-Avec une ligne de commande, il est possible d'établir des combinaisons plus personnalisées.
+Avec une ligne de commande, il est possible d'établir des combinaisons plus adapté à un contexte précis.
 
 #### Flexibilité et automatisation
 
@@ -89,7 +94,11 @@ Plusieurs commandes existent pour créer, inspecter, renommer et supprimer des f
 
 #### Notes différences de systèmes d'opérations
 
-Les machines windows séparent les dossiers par '\' et les machines Unix par '/'.
+Les machines windows séparent les dossiers par '\' et les machines Unix par '/'. 
+
+Certaines commandes peuvent ne pas être disponibles dans le shell de votre machine. 
+
+Le PowerShell disponible sur plusieurs machines, dont windows, [a des aliases pour plusieurs des commandes Unix](https://docs.microsoft.com/en-us/powershell/scripting/learn/using-familiar-command-names?view=powershell-6).
 
 #### Imprimer le répertoire de travail (print working directory)
 ```bash
@@ -106,7 +115,7 @@ Les machines windows séparent les dossiers par '\' et les machines Unix par '/'
     $ ls -F
 ```
 
-Le flag -F permet de savoir quel type de contenu est lister (avec les '/')
+Le flag -F permet de savoir quel type de contenu est lister (à l'aide du symbole '/')
 
 ```bash
     python-exception-handling-intro/ shell-cl-intro/
@@ -120,9 +129,11 @@ Obtenir le manuel de la commande: chercher unix man page.
     $ man ls
 ```
 
-Les manuels sont disponibles en ligne
-# TODO: check if works on windows
-Obtenir de l'aide 
+Les manuels sont disponibles en ligne.
+
+## TODO: check if works on windows
+
+Obtenir de l'aide :
 ```bash
     $ ls --help
 ```
@@ -134,7 +145,7 @@ Présenter tous les dossiers et fichiers de façon récursive:
     $ ls -R
 ```
 
-Présenter les dossiers et fichiers par date de modificaiton:
+Présenter les dossiers et fichiers par date de modification:
 ```bash
     $ ls -t
 ```
@@ -191,7 +202,7 @@ Le ~ est interpréter comme référence au dossier mère de l'usager (home direc
     $ cd ~/Desktop
 ```
 
-Constructs absolute path
+Le tilde reconstruit un path non-relatif vers le dossier mère à partir de l'emplacement énoncé.
 
 #### Absolute vs Relative path
 
@@ -253,8 +264,10 @@ Suivre les commandes pour l'édition (fn F2 sur mac pour quitter ou ctrl-X sur a
 
 Un dossier avec des contenus:
 ```bash
-    $ rmdir -r mon_dossier
+    $ rm -r mon_dossier
 ```
+
+Pour supprimer un dossier avec son contenu, on utilise la commande 'rm' et non 'rmdir'
 
 *En ligne de commande, il n'y a pas de retour en arrière (Pas de corbeille)! faites attention lorsque vous supprimé.*
 
@@ -369,7 +382,7 @@ Ou seulement le nombre de lignes:
 #### Classer le contenu d'un fichier
 
 ```bash
-    $ sort - n lenghts.txt
+    $ sort -n lenghts.txt
 ```
 
 *'n' utiliser pour spécifier que le champ est numérique*
@@ -379,7 +392,7 @@ Le fichier n'est pas modifier. Le contenu imprimé est simplement classé.
 Pour enregistrer le contenu dans un nouveau fichier:
 
 ```bash
-    $ sort - n lenghts.txt > sorted_lengths.txt
+    $ sort -n lenghts.txt > sorted_lengths.txt
 ```
 
 #### imprimer du texte:
@@ -427,15 +440,16 @@ Chercher le total du nombre de mot dans tous les fichiers:
 ## Le principe du Shell
 
 ## TODO: place graphiqe
-Cette idée simple du Shell Unix est pourquoi il a du succès. 
+
 Au lieu de créer des programmes immenses qui exécutent plusieurs tâches, les programmeurs Unix se concentre sur le développement
 de petits outils qui font une tâche parfaitement et qui peuvent fonctionner ensemble. Le modèle de développement s'appel: 'pipes and filters.'
+C'est une des grandes raisons de pourquoi le Shell Unix est si populaire.
 
 Les filtres sont des programmes comme 'wc' ou 'sort', ils appliquent une fonction à des intrants et envoie une sortie.
 Presque tous les outils Unix fonctionnent de cette façon: 
 - Lire des intrants (standard input ou stdin), 
 - Appliquer une fonction aux intrants
-- Écrir une sortie (standard out ou stdout)
+- Écrire une sortie (standard out ou stdout)
 
 ## Rediriger des intrants
 
@@ -472,7 +486,7 @@ Les contenus du fichiers sont seulement passés à la fonction
 
 Aller dans le répertoire creatures.
 
-Le symbole '$' est utilisé pour désigné une variable. 
+Le symbole '$' est utilisé pour désigner une variable. 
 
 #### Retourner les trois premières lignes de plusieurs fichiers:
 ```bash
@@ -486,7 +500,7 @@ L'indentation n'est pas obligatoire comme en Python, mais aide à la lisibilité
 
 #### Lister les contenus d'un dossier et les sous dossiers
 
-Aller au répertoire molécules.
+Aller au répertoire 'molecules'.
 ```bash
 for filename in c*
 > do
@@ -504,7 +518,7 @@ for datafile in *.pdb
 
 #### Pourquoi éviter les espaces:
 
-Si un fichier contient des espaces, il est nécessaires de l'encapsuler comme suit:
+Si un fichier contient des espaces, il est nécessaire de l'encapsuler comme suit:
 
 ```bash
 $ for filename in "red dragon.dat" "purple unicorn.dat"
@@ -541,6 +555,104 @@ $ for species in cubane ethane methane
 > done
 ```
 
+## Les scripts Shell 
+
+#### Questions
+> - Comment sauvegarder et réutiliser des commandes?
+
+#### Objectifs
+> - Écrire un script qui exécute une série de commande sur plusieurs fichiers distincts
+> - Exécuter un script à partir de la ligne de commande
+> - Écrire un script qui reçoit des intrants d'un usager à partir de la ligne de commande
+> - Créer des pipelines de traitement qui inclus plusieurs scripts
+
+Les scripts sont ce qui rend le shell si puissant. 
+L'habileté de sauvegarder une série de commande dans un scripts et l'exécuter avec un seule commande.
+
+## Commande pour créer des scripts shell
+
+```bash
+    $ cd molecules
+    $ nano middle.sh
+```
+
+Ou: 
+```bash
+    $ cd molecules
+    $ touch middle.sh
+    $ open -a "textEdit" middle.sh 
+    $ open -a "pyCharm" middle.sh
+```
+
+Les mêmes commandes peuvent être passer à notre script:
+```bash
+head -n 15 octane.pdb | tail -n 5
+```
+
+Le script peut maintenant être appelé du shell:
+
+```bash
+    $ bash middle.sh
+```
+
+#### Modifier le script pour passer un nom de fichier à celui-ci
+
+On remplace le nom de fichier par '$1' pour désigné le premier argument passé à la ligne de commande.
+
+```bash
+head -n 15 "$1" | tail -n 5
+```
+*Mettre la variable entre double guillemets assure qu'un argument passé avec un espace sera lu par notre commande.*
+
+La fonction peut maintenant être appelé sur n'importe quelle fichier:
+```bash
+    $ bash middle.sh octane.pdb
+```
+
+#### Modifier le script pour prendre un nombre de lignes différents:
+```bash
+head -n "$2" "$1" | tail -n "$3"
+```
+
+Il est maintenant possible d'obtenir les lignes désirées dans le milieu d'un fichier::
+```bash
+    $ bash middle.sh octane.pdb 15 10
+```
+
+#### Commenter son code
+
+Comme en python, il est possible de commenter son code en utilisant des '#':
+
+# Select lines from the middle of a file.
+# Usage: bash middle.sh filename end_line num_lines
+```bash
+# Sélectionner des lignes dans le milieu d'un fichier.
+# Usage: bash middle.sh filename end_line num_lines
+head -n "$2" "$1" | tail -n "$3"
+```
+
+#### Passer un nombre non-défini d'arguments
+
+Le symbole '$@' est utilisé pour passer un nombre indéfini d'arguments à la ligne de commande.
+
+```bash
+# Script to find unique species in csv files where species is the second data field
+# This script accepts any number of file names as command line arguments
+
+# Loop over all files
+for file in $@ 
+do
+	echo "Unique species in $file:"
+	# Extract species names
+	cut -d , -f 2 $file | sort | uniq
+done
+```
+
+#### Note sur l'historique de commande
+
+Une commande est toujours enregistrer dans l'historique des commandes avant d'être exécuter. 
+Ceci permet de comprendre plus facilement des erreurs lors de l'exécution.
+
 ## Conclusion
 
 La ligne de commande est un outil puissant qui permet d'automatiser des tâches complexes.
@@ -549,7 +661,11 @@ Maîtriser le Shell permet de développer des solutions innovateurs en utilisant
 
 Contenu initalement publié sur [mon site](zacharydeziel.com)
 
-Source du contenu: [Software carpentry](https://swcarpentry.github.io/shell-novice/)
+## Source du contenu:
+
+Gabriel Devenyi, Christina Koch, and Ashwin Srinath (eds): "Software
+Carpentry: The Unix Shell."  Version 2016.06, June 2016,
+https://github.com/swcarpentry/shell-novice, 10.5281/zenodo.57544.
 
 
 
