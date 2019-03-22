@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63811e9f-5fc6-44b8-a1c1-54b36ba94288" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/intro-black/intro-black.MD" beforeDir="false" afterPath="$PROJECT_DIR$/intro-black/intro-black.MD" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,7 +20,7 @@
         <entry file="file://$PROJECT_DIR$/shell-cl-intro/shell-cl-intro-en.MD">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="163">
+              <first_editor relative-caret-position="11505">
                 <caret line="767" selection-start-line="767" selection-end-line="769" selection-end-column="3" />
               </first_editor>
               <second_editor />
@@ -31,8 +32,8 @@
         <entry file="file://$PROJECT_DIR$/intro-black/intro-black.MD">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="450">
-                <caret line="30" column="75" selection-end-line="67" />
+              <first_editor relative-caret-position="626">
+                <caret line="66" column="64" selection-start-line="66" selection-start-column="64" selection-end-line="66" selection-end-column="64" />
               </first_editor>
               <second_editor />
             </state>
@@ -43,7 +44,7 @@
         <entry file="file://$PROJECT_DIR$/.pre-commit-config.yaml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
-              <caret line="5" column="33" lean-forward="true" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+              <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -127,7 +128,7 @@
             <path>
               <item name="blog_content" type="b2602c69:ProjectViewProjectNode" />
               <item name="blog_content" type="462c0819:PsiDirectoryNode" />
-              <item name="shell-cl-intro" type="462c0819:PsiDirectoryNode" />
+              <item name="intro-black" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -211,18 +212,19 @@
       <workItem from="1553186756155" duration="308000" />
       <workItem from="1553189646981" duration="6047000" />
       <workItem from="1553261960150" duration="10744000" />
-      <workItem from="1553285311599" duration="3457000" />
+      <workItem from="1553285311599" duration="3907000" />
+      <workItem from="1553291303095" duration="170000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36986000" />
+    <option name="totallyTimeSpent" value="37606000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1280" y="-280" width="1920" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1373802" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13844515" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -236,7 +238,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.22772278" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.22772278" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -304,6 +306,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/shell-cl-intro/shell-cl-intro-en.MD">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="11505">
+            <caret line="767" selection-start-line="767" selection-end-line="769" selection-end-column="3" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.pre-commit-config.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/python-exception-handling-intro/generate_password.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="630">
@@ -314,28 +333,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shell-cl-intro/shell-cl-intro-en.MD">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="163">
-            <caret line="767" selection-start-line="767" selection-end-line="769" selection-end-column="3" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.pre-commit-config.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="33" lean-forward="true" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/intro-black/intro-black.MD">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="450">
-            <caret line="30" column="75" selection-end-line="67" />
+          <first_editor relative-caret-position="626">
+            <caret line="66" column="64" selection-start-line="66" selection-start-column="64" selection-end-line="66" selection-end-column="64" />
           </first_editor>
           <second_editor />
         </state>

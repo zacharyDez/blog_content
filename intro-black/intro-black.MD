@@ -1,10 +1,12 @@
 # Introduction à *Black* - formateur automatique Python
 
-*Black* est un formateur automatique pour Python. L'outil permet d'uniformiser le travail d'équipe de développement.
+*Black* est un formateur automatique pour Python. L'outil permet d'uniformiser le travail de chaque membre d'une équipe de développement.
 Le projet vise à minimiser le temps passé par les développeurs sur le format de leur travail pour qu'il se concentre sur leur contenu.
 
 **Documentation**:
+
 - [Standards Python](https://www.python.org/dev/peps/)
+
 - [Documentation *Black*](https://black.readthedocs.io/en/stable/)
 
 ## Installation
@@ -15,7 +17,7 @@ Le projet vise à minimiser le temps passé par les développeurs sur le format 
 
 ## Utilisation simple
 
-Une première utilisation de l'outil est de simplement de l'appliquer à la racine du projet:
+Une première utilisation de l'outil est de simplement l'appliquer à la racine du projet:
 
 ```bash
     $ black dossier_racine
@@ -26,10 +28,9 @@ Voilà, votre code est formaté! C'est simple, rapide et suffisant pour des proj
 ## Utilisation avancée
 
 Un *hook* est un programme qui déclenche des actions sur des commandes git. 
-Il est possible de définir des actions à exécuter à tout moment de notre processus de contrôle de version: [documentation sur les *hooks*](https://git-scm.com/docs/githooks).
+Il est possible de définir des actions à tout moment du processus de contrôle de version: [documentation sur les *hooks*](https://git-scm.com/docs/githooks).
 
-Il est possible de définir un *hook* pour qu'à chaque fois que la commande git commit est exécuté,
-notre code se fait formater par *Black*.
+Il est possible de définir un *hook* sur la commande *git commit*. À chaque exécution de la commande,  les fichiers Python se feront formater par *Black*.
 
 #### Étapes pour configurer *Black* en pre-commit: 
 
@@ -64,4 +65,3 @@ Il est possible d'aller modifier le *.toml* file de *Black* pour modifier certai
 ex: nombre de caractères par lignes).
 
 *Contenu initialement publié sur [mon site](zacharydeziel.com).*
-
