@@ -1,10 +1,21 @@
-# Introduction au shell et à la ligne de commande
+# Introduction au Shell et à la ligne de commande
 
-Contenu initalement publié sur [mon site](zacharydeziel.com).
+French introduction to the command line. Based on the [Software Carpentry](https://software-carpentry.org/) approach.
+The objective of this introduction is to prepare students from the introduction to geospatial programming to more advance topics
+such as *(Currently working next subjects)*:
+
+- [Adapting Python Scripts for the command line](../python-script-cl/python-script-cl-en.MD)
+
+- [Using the command line in Python scripts](../calling-cl-python/calling-cl-python-en.MD)
+
+- [Efficiently scaling remote sensing image corrections with the CL and Python](../calling-cl-python/calling-cl-python-en.MD)
+
+
+Content initially published on [my site](zacharydeziel.com).
 
 ## Source du contenu
 
-La source du contenu suit l'approche développé par [Software Carpentry](https://software-carpentry.org/) 
+La source du contenu suit l'approche développée par [Software Carpentry](https://software-carpentry.org/) 
 dont l'objectif est d'équiper des chercheurs avec les outils technologiques d'aujourd'hui. 
 L'ensemble du contenu de leurs leçons est Open Source. 
 
@@ -16,75 +27,75 @@ Référence au bas du document.
 ## Obtenir les données
 
 Le fichier compressé des données est disponible [ici](https://software-carpentry.org/).
-## Cheat Sheet
+## Aide mémoire
 
 L'objectif du document est de servir comme référence après l'atelier d'introduction.
 
 ## Introduction au Shell
 
-##### Question
+#### Question
 
 > - C'est quoi la ligne de commande et pourquoi je devrais l'utiliser?
 
-##### Objectifs:
+#### Objectifs:
 > - Comprendre les liens entre les usagers et l'ordinateur
 > - Comprendre quand et pourquoi les lignes de commandes sont plus adaptées que des interfaces graphiques
 
 #### Contexte
 
 À un haut-niveau les ordinateurs peuvent:
-- Exécuter un program
-- Stocker des des données
+- Exécuter un programme
+- Stocker des données
 - Communiquer entre eux
-- Intéragir avec des usagers
+- Interagir avec des usagers
 
 Ils peuvent faire ses tâches de plusieurs méthodes différentes par l'entremise du clavier, d'une souris, d'un écran tactile ou même par reconnaissance de la voix.
 
-Nous sommes tous familiers avec des interfaces graphiques (GUI) qui consiste en des fenêtres, des icons et des pointeurs. 
+Nous sommes tous familiers avec des interfaces graphiques (GUI) qui consistent en des fenêtres, des icônes et des pointeurs. 
 Ils sont faciles à apprendre et excellent pour exécuter des tâches simples. 
 Ils permettent avec un usager, peu importe ses connaissances informatiques, d'exécuter une tâche.
-Cette magie dépend de plusieurs petites tâches simples and d'avoir accès à des programmes qui font ces tâches simples.
+Cette magie dépend de plusieurs petites tâches simples et d'avoir accès à des programmes qui font ces tâches simples.
  
-Si vous désirez accomplir des tâches plus complexes et appliquer à un domaine spécifique, avoir des connaissances du shell sont nécessaires pour communiquer avec l'ordinateur.
-La connaissance de simple commandes permettent d'automatiser une grande charge de travail.
+Si vous désirez accomplir des tâches plus complexes et appliquer à un domaine spécifique, avoir des connaissances du Shell est nécessaire pour communiquer avec l'ordinateur.
+La connaissance de simples commandes permet d'automatiser une grande charge de travail.
 
 Le coeur d'une interface de ligne de commande est la relation lecture-évaluation-sortie (*read-evaluate-print, REPL* ). 
-Quand une commande est saisie, elle est évaluer et ensuite une sortie (résultat) est imprimée.
+Quand une commande est saisie, elle est évaluée et ensuite une sortie (résultat) est imprimée.
 
 ## Définition du Shell
 
 Le Shell est un programme qui utilise d'autres programmes pour exécuter les calculs au lieu de les effectuer lui même. 
-Il y a plusieurs Shell qui existe. 
-Bash est le shell par défaut des systèmes d'opérations Unix and de plusieurs extensions du Shell sur Windows.
+Il y a plusieurs Shell qui existent. 
+Bash est le Shell par défaut des systèmes d'opérations Unix et de plusieurs extensions du Shell sur Windows.
 
-Python a un shell intéractif qui utilise le même principe: le shell appel l'interpréteur Python pour faire les calculs.
-C'est un outil important pour expérimenter avec des solutions potentiels pour des programmes. 
-Très utilisé pour l'exploration de jeux de donnés.
+Python a un Shell interactif qui utilise le même principe: le Shell appelle l'interpréteur Python pour faire les calculs.
+C'est un outil important pour expérimenter avec des solutions potentielles pour des programmes. 
+Très utilisé pour l'exploration de jeux de données.
 
-![Exemple Shell](img/ex-cl-ls.png)
+![Exemple Shell](static/img/ex-cl-ls.png)
 
-## Comment que le Shell comprend les commandes and ces arguments?
+## Comment que le Shell comprend les commandes et ces arguments?
 
-Chaque commande à un programme qui est stocké sur l'ordinateur et le shell possède une liste des endroits où chercher 
+Chaque commande à un programme qui est stocké sur l'ordinateur et le Shell possède une liste des endroits où chercher 
 pour les commandes (dans la fameuse variable PATH).
 
-#### Logic du Shell:
+#### Logique du Shell:
 1. Lire la commande saisie (séparation par espace et **';'** entre les commandes)
 2. Évaluer la commande:
     - Trouver le programme de la commande
     - Exécuter la commande en y passant les arguments
 3. Imprimer la sortie de la commande.
 
-Si la commande n'est pas trouvée, des messages d'erreurs seront imprimées comme sortie.
+Si la commande n'est pas trouvée, des messages d'erreurs seront imprimés comme sortie.
 
 #### Différence avec un GUI
 
 Un GUI vous présente des options et vous êtes limités par ces options.
-Avec une ligne de commande, il est possible d'établir des combinaisons plus adapté à un contexte précis.
+Avec une ligne de commande, il est possible d'établir des combinaisons plus adaptées à un contexte précis.
 
 #### Flexibilité et automatisation
 
-Le shell permet de prendre des commandes existantes et de développer des pipelines de traitement plus avancés.
+Le Shell permet de prendre des commandes existantes et de développer des pipelines de traitement plus avancés.
 Cette capacité est fondamentale pour traiter des grands volumes de données. 
 Il est possible d'écrire des séquences de commandes dans des scripts pour avoir des méthodes reproductibles.
 
@@ -101,9 +112,9 @@ Il est possible d'écrire des séquences de commandes dans des scripts pour avoi
 > - Traduire un path absolue en path relatif et vice-versa
 > - Construire des paths qui identify des fichiers ou dossiers spécifique.
 
-La partie du système d'opération (OS) qui s'occupe de la gestion de fichier se nomme le système de fichier. 
+La partie du système d'opération (OS) qui s'occupe de la gestion de fichiers se nomme le système de fichier. 
 Il organise nos données en fichiers ou en dossier. 
-Les fichiers ont de l'information, tandis que les dossiers sont composés de fichiers ou de d'autres dossiers.
+Les fichiers ont de l'information, tandis que les dossiers sont composés de fichiers ou d'autres dossiers.
 
 Plusieurs commandes existent pour créer, inspecter, renommer et supprimer des fichiers ou dossiers.
 
@@ -111,13 +122,13 @@ Plusieurs commandes existent pour créer, inspecter, renommer et supprimer des f
 
 #### Notes différences de systèmes d'opérations
 
-Les machines windows séparent les dossiers par **'\\'** et les machines Unix par **'/'**. 
+Les machines Windows séparent les dossiers par **'\\'** et les machines Unix par **'/'**. 
 
-Certaines commandes peuvent ne pas être disponibles dans le shell de votre machine. 
+Certaines commandes peuvent ne pas être disponibles dans le Shell de votre machine. 
 
 Le PowerShell est une bonne option sur Windows: [alias commandes Unix](https://docs.microsoft.com/en-us/powershell/scripting/learn/using-familiar-command-names?view=powershell-6).
 
-#### Imprimer le répertoire de travail (print working directory)
+Imprimer le répertoire de travail (print working directory):
 ```bash
     $ pwd
 ```
@@ -126,21 +137,21 @@ Le PowerShell est une bonne option sur Windows: [alias commandes Unix](https://d
     /Users/zac
 ```
 
-#### Lister les contenus d'un dossier
+Lister les contenus d'un dossier:
 
 ```bash
     $ ls -F
 ```
 
-Le flag -F permet de savoir quel type de contenu est lister (à l'aide du symbole **'/'**)
+Le flag -F permet de savoir quel type de contenu est listé (à l'aide du symbole **'/'**)
 
 ```bash
-    python-exception-handling-intro/ shell-cl-intro/
+    python-exception-handling-intro/ Shell-cl-intro/
 ```
 
-#### Obtenir de l'aide pour une commande
+Obtenir de l'aide pour une commande:
 
-Obtenir le manuel de la commande: chercher unix man page.
+Obtenir le manuel de la commande: chercher Unix man page.
 
 ```bash
     $ man ls
@@ -148,14 +159,12 @@ Obtenir le manuel de la commande: chercher unix man page.
 
 Les manuels sont disponibles en ligne aussi.
 
-## TODO: check if works on windows
-
 Obtenir de l'aide :
 ```bash
     $ ls --help
 ```
 
-#### Outils intéressant de ls
+Outils intéressants de ls:
 
 Présenter tous les dossiers et fichiers de façon récursive:
 ```bash
@@ -172,9 +181,9 @@ Présenter les dossiers et fichiers d'un autre dossier:
     $ ls -F Desktop
 ```
 
-#### Outils externes
+Outils externes:
 
-Sur mac (brew doit être installé): 
+Sur Mac (brew doit être installé): 
 
 ```bash
 $ brew install tree
@@ -187,20 +196,20 @@ $ brew install tree
 ```bash
 .
 ├── python-exception-handling-intro
-│   ├── generate_password.py
-│   ├── generer_mot_passe.py
-│   └── python-exception-handling-intro.MD
-└── shell-cl-intro
-    └── shell-cl-intro-en.MD
+│   ├── generate_password.py
+│   ├── generer_mot_passe.py
+│   └── python-exception-handling-intro.MD
+└── Shell-cl-intro
+    └── Shell-cl-intro-en.MD
 ```
 
-#### Naviguer à un dossier
+Naviguer à un dossier:
 
 ```bash
     $ cd Desktop
 ```
 
-#### Remonter d'un dossier
+Remonter d'un dossier:
 
 ```bash
     $ cd ..
@@ -219,14 +228,14 @@ Le **~** est interpréter comme référence au dossier mère de l'usager (home d
     $ cd ~/Desktop
 ```
 
-Le tilde reconstruit un path non-relatif vers le dossier mère à partir de l'emplacement énoncé.
+Le tilde reconstruit un path non relatif vers le dossier mère à partir de l'emplacement énoncé.
 
-#### Absolute vs Relative path
+#### Absolute vs relatif path
 
 Les paths relatifs sont donnés en fonction du répertoire courant (current working directory). 
-Les paths absolues sont donnés en fonction du répertoire racine (root) du système de fichiers.
+Les paths absolus sont donnés en fonction du répertoire racine (root) du système de fichiers.
 
-## Travailler avec des fichiers et des dossiers
+## travailler avec des fichiers et des dossiers
 
 #### Questions
 > - Comment créer, copier et supprimer des fichiers et dossiers?
@@ -241,39 +250,39 @@ Les paths absolues sont donnés en fonction du répertoire racine (root) du syst
 
 Des noms complexes rendent les commandes plus difficiles.
 
-1. N'utiliser pas d'espaces
+1. N'utilisez pas d'espaces
 2. Ne commencez pas les noms avec un **'-'**
-3. Éviter les symboles! Ils ont une autre référence en ligne de commande
+3. Éviter les symboles! Ils ont une autre référence en ligne de commande.
 
 ## Commandes de modifications
 
-#### Créer un dossier
+Créer un dossier:
 
 ```bash
     $ mkdir thesis
 ```
 
-#### Créer un fichier avec un éditeur
+Créer un fichier avec un éditeur:
 
 ```bash
     $ nano test_draft.txt
 ```
 
-Suivre les commandes pour l'édition (fn F2 sur mac pour quitter ou ctrl-X sur autre) 
+Suivre les commandes pour l'édition (fn F2 sur Mac pour quitter ou ctrl X sur autre) 
 
-#### Créer un fichier vide
+Créer un fichier vide:
 
 ```bash
     $ touch mon_fichier.txt
 ```
 
-#### Supprimer des fichiers
+Supprimer des fichiers:
 
 ```bash
     $ rm mon_fichier.txt
 ```
 
-#### Supprimer un dossier
+Supprimer un dossier:
 
 ```bash
     $ rmdir mon_dossier
@@ -286,14 +295,14 @@ Un dossier avec des contenus:
 
 Pour supprimer un dossier avec son contenu, on utilise la commande **'rm'** et non **'rmdir'**
 
-*En ligne de commande, il n'y a pas de retour en arrière (Pas de corbeille)! Faites attention lorsque vous supprimé.*
+*En ligne de commande, il n'y a pas de retour en arrière (pas de corbeille)! Faites attention lorsque vous supprimé.*
 
 Plus sécuritaire:
 ```bash
     $ rmdir -i mon_dossier
 ```
 
-#### Déplacer des fichiers
+Déplacer des fichiers:
 
 ```bash
     $ mv test.txt thesis/test.txt
@@ -302,19 +311,19 @@ Plus sécuritaire:
 *Faire attention à l'écrasement de fichier lorsque vous déplacez des fichiers. 
 S'il y a un fichier du même nom dans le répertoire de réception, il sera écrasé.*
 
-#### Renommer un fichier
+Renommer un fichier:
 
 ```bash
     $ mv test.txt text.txt
 ```
 
-#### Copier des fichiers et des dossiers
+Copier des fichiers et des dossiers:
 
 ```bash
     $ cp thesis/test.txt test.txt
 ```
 
-#### Faire un back-up
+Faire un back-up:
 
 ```bash
     $ cp -r thesis thesis-backup
@@ -322,25 +331,21 @@ S'il y a un fichier du même nom dans le répertoire de réception, il sera écr
 
 #### 'Wildcards'
 
-**'\*'** remplace une chaîne de caractère.
+**'\*'** Remplace une chaîne de caractère.
 
-**'?'** remplace un seul caractère.
+**'?'** Remplace un seul caractère.
 
-#### Trouver tous les fichiers ayant une certaine extension:
+Trouver tous les fichiers ayant une certaine extension:
 
 ```bash
     $ ls *.txt
 ```
 
-#### Trouver tous les fichiers ayant un charactère qui varie peu importe l'extension:
+Trouver tous les fichiers ayant un caractère qui varie, peu importe l'extension:
 
 ```bash
     $ ls ?_sherbrooke.*
 ```
-
-#### Exercice
-
-## TODO: Définir
 
 ## Filtres et pipes
 
@@ -355,13 +360,13 @@ S'il y a un fichier du même nom dans le répertoire de réception, il sera écr
 
 ## Exemples de combinaison
 
-#### Aller à un dossier et lister les contenus
+Aller à un dossier et lister les contenus:
 
 ```bash
     $ cd data-shell; ls -F
 ```
 
-#### Aller à un dossier et lister le nombre de mots des fichiers
+Aller à un dossier et lister le nombre de mots des fichiers:
 
 ```bash
     $ cd data-shell; wc *.pdb
@@ -372,7 +377,7 @@ Ou seulement le nombre de lignes:
     $ cd data-shell; wc -l *.pdb
 ```
 
-#### Rediriger le contenu vers un fichier
+Rediriger le contenu vers un fichier:
 
 ```bash
     $ wc *.pdb > lengths.txt
@@ -384,19 +389,19 @@ Ou seulement le nombre de lignes:
     $ pip freeze > requirements.txt
 ```
 
-#### Imprimer le contenu d'un fichier 
+Imprimer le contenu d'un fichier:
 
 ```bash
     $ cat requirements.txt
 ```
 
-*Faire attention avec des fichiers très large.*
+*Faire attention avec des fichiers très larges.*
 
 ```bash
     $ less requirements.txt
 ```
 
-#### Classer le contenu d'un fichier
+Classer le contenu d'un fichier:
 
 ```bash
     $ sort -n lenghts.txt
@@ -404,7 +409,7 @@ Ou seulement le nombre de lignes:
 
 ***'n'** utiliser pour spécifier que le champ est numérique*
 
-Le fichier n'est pas modifier. Le contenu imprimé est simplement classé.
+Le fichier n'est pas modifié. Le contenu imprimé est simplement classé.
 
 Pour enregistrer le contenu dans un nouveau fichier:
 
@@ -412,7 +417,7 @@ Pour enregistrer le contenu dans un nouveau fichier:
     $ sort -n lenghts.txt > sorted_lengths.txt
 ```
 
-#### imprimer du texte:
+Imprimer du texte:
 
 ```bash
     $ echo The echo command prints things
@@ -426,13 +431,13 @@ Enregistrer dans un fichier:
 
 *Le symbole '>' écrase le fichier*
 
-#### Ajouter du contenu à un fichier avec '>>':
+Ajouter du contenu à un fichier avec '>>':
 
 ```bash
     $ echo The echo command prints things >> echo_text.txt
 ```
 
-##### Imprimer le début ou la fin d'un fichier
+Imprimer le début ou la fin d'un fichier:
 
 ```bash
     $ head -n 3 lengths.txt > l_up.txt
@@ -441,7 +446,7 @@ Enregistrer dans un fichier:
 
 ### Les pipes:
 
-Les pipes prennent la sortie de la première commande et l'envoie commen entré à la deuxième. 
+Les pipes prennent la sortie de la première commande et l'envoient en entrer à la deuxième. 
 L'ordinateur créera des fichiers temporaires en mémoire ou exécutera n'importe qu'elle tâche qu'il a besoin.
 
 ```bash
@@ -456,10 +461,9 @@ Chercher le total du nombre de mot dans tous les fichiers:
 
 ## Le principe du Shell
 
-## TODO: place graphiqe
 
-Au lieu de créer des programmes immenses qui exécutent plusieurs tâches, les programmeurs Unix se concentre sur le développement
-de petits outils qui font une tâche parfaitement et qui peuvent fonctionner ensemble. Le modèle de développement s'appel: 'pipes and filters.'
+Au lieu de créer des programmes immenses qui exécutent plusieurs tâches, les programmeurs Unix se concentrent sur le développement
+de petits outils qui font une tâche parfaitement et qui peuvent fonctionner ensemble. Le modèle de développement s'appelle: 'pipes and filters.'
 C'est une des grandes raisons de pourquoi le Shell Unix est si populaire.
 
 Les filtres sont des programmes comme 'wc' ou 'sort', ils appliquent une fonction à des intrants et envoie une sortie.
@@ -467,6 +471,9 @@ Presque tous les outils Unix fonctionnent de cette façon:
 - Lire des intrants (standard input ou stdin), 
 - Appliquer une fonction aux intrants
 - Écrire une sortie (standard out ou stdout)
+
+![Exemple Shell](static/img/principe-shell.png)
+
 
 ## Rediriger des intrants
 
@@ -484,7 +491,7 @@ Le nom du fichier et ces contenus sont passés à la fonction.
     $ wc -l < notes.txt
 ```
 
-Les contenus du fichiers sont seulement passés à la fonction
+Les contenus du fichier sont seulement passés à la fonction
 
 ## Les boucles
 
@@ -505,7 +512,7 @@ Aller dans le répertoire creatures.
 
 Le symbole **'$'** est utilisé pour désigner une variable. 
 
-#### Retourner les trois premières lignes de plusieurs fichiers:
+Retourner les trois premières lignes de plusieurs fichiers:
 ```bash
 $ for filename in basilisk.dat unicorn.dat
 > do
@@ -515,7 +522,7 @@ $ for filename in basilisk.dat unicorn.dat
 L'indentation n'est pas obligatoire comme en Python, mais aide à la lisibilité.
 
 
-#### Lister les contenus d'un dossier et les sous dossiers
+Lister les contenus d'un dossier et les sous-dossiers:
 
 Aller au répertoire 'molecules'.
 ```bash
@@ -525,7 +532,7 @@ for filename in c*
 > done
 ```
 
-#### Ajouter les contenus de fichiers à un seul fichier:
+Ajouter les contenus de fichiers à un seul fichier:
 ```bash
 for datafile in *.pdb
 > do
@@ -533,7 +540,7 @@ for datafile in *.pdb
 > done
 ```
 
-#### Pourquoi éviter les espaces:
+Pourquoi éviter les espaces:
 
 Si un fichier contient des espaces, il est nécessaire de l'encapsuler comme suit:
 
@@ -545,7 +552,7 @@ $ for filename in "red dragon.dat" "purple unicorn.dat"
 ```
 
 
-#### Copier un fichier dans plusieurs dossiers:
+Copier un fichier dans plusieurs dossiers:
 
 ```bash
 $ for filename in *.dat
@@ -555,13 +562,13 @@ $ for filename in *.dat
 ```
 
 
-#### Afficher l'historique de commande
+Afficher l'historique de commande:
 
 ```bash
 history | tail -n 5
 ```
 
-#### Nested Loop
+Nested Loop:
 ```bash
 $ for species in cubane ethane methane
 > do
@@ -583,10 +590,10 @@ $ for species in cubane ethane methane
 > - Écrire un script qui reçoit des intrants d'un usager à partir de la ligne de commande
 > - Créer des pipelines de traitement qui inclus plusieurs scripts
 
-Les scripts sont ce qui rend le shell si puissant. 
-L'habileté de sauvegarder une série de commande dans un scripts et l'exécuter avec un seule commande.
+Les scripts sont ce qui rend le Shell si puissant. 
+L'habileté de sauvegarder une série de commandes dans un script et l'exécuter avec un seule commande.
 
-## Commande pour créer des scripts shell
+## Commande pour créer des scripts Shell
 
 ```bash
     $ cd molecules
@@ -601,12 +608,12 @@ Ou:
     $ open -a "pyCharm" middle.sh
 ```
 
-Les mêmes commandes peuvent être passer à notre script:
+Les mêmes commandes peuvent être passées à notre script:
 ```bash
 head -n 15 octane.pdb | tail -n 5
 ```
 
-Le script peut maintenant être appelé du shell:
+Le script peut maintenant être appelé du Shell:
 
 ```bash
     $ bash middle.sh
@@ -614,19 +621,19 @@ Le script peut maintenant être appelé du shell:
 
 #### Modifier le script pour passer un nom de fichier à celui-ci
 
-On remplace le nom de fichier par '$1' pour désigné le premier argument passé à la ligne de commande.
+On remplace le nom de fichier par '$1' pour désigner le premier argument passé à la ligne de commande.
 
 ```bash
 head -n 15 "$1" | tail -n 5
 ```
-*Mettre la variable entre double guillemets assure qu'un argument passé avec un espace sera lu par notre commande.*
+*Mettre la variable entre doubles guillemets assure qu'un argument passé avec un espace sera lu par notre commande.*
 
-La fonction peut maintenant être appelé sur n'importe quelle fichier:
+La fonction peut maintenant être appelé sur n'importe quel fichier:
 ```bash
     $ bash middle.sh octane.pdb
 ```
 
-#### Modifier le script pour prendre un nombre de lignes différents:
+Modifier le script pour prendre un nombre de lignes différentes:
 ```bash
 head -n "$2" "$1" | tail -n "$3"
 ```
@@ -636,19 +643,16 @@ Il est maintenant possible d'obtenir les lignes désirées dans le milieu d'un f
     $ bash middle.sh octane.pdb 15 10
 ```
 
-#### Commenter son code
+Commenter son code:
 
 Comme en python, il est possible de commenter son code en utilisant des **'#'**:
-
-# Select lines from the middle of a file.
-# Usage: bash middle.sh filename end_line num_lines
 ```bash
 # Sélectionner des lignes dans le milieu d'un fichier.
 # Usage: bash middle.sh filename end_line num_lines
 head -n "$2" "$1" | tail -n "$3"
 ```
 
-#### Passer un nombre non-défini d'arguments
+#### Passer un nombre non défini d'arguments
 
 Le symbole **'$@'** est utilisé pour passer un nombre indéfini d'arguments à la ligne de commande.
 
@@ -667,7 +671,7 @@ done
 
 #### Note sur l'historique de commande
 
-Une commande est toujours enregistrer dans l'historique des commandes avant d'être exécuter. 
+Une commande est toujours enregistrée dans l'historique des commandes avant d'être exécutée. 
 Ceci permet de comprendre plus facilement des erreurs lors de l'exécution.
 
 #### Questions
@@ -693,72 +697,72 @@ Ceci permet de comprendre plus facilement des erreurs lors de l'exécution.
 
 ## Exemple trouver les lignes d'un document texte
 
-#### Montrer les contenus du fichiers 'haiku.txt'
+Montrer les contenus du fichier 'haiku.txt':
 ```bash
     $ cd Desktop/data-shell/writing
     $ cat haiku.txt
 ```
 
-#### Trouver les lignes du fichier contenant une chaîne de charactères spécifique (pas juste un mot):
+Trouver les lignes du fichier contenant une chaîne de caractères spécifique (pas juste un mot):
 ```bash
     $ grep The haiku.txt
 ```
 
-*Note sur la chaîne de charactères: exécuter cette commande avec 'The' retournerait aussi des lignes avec des mots comme Thesis.*
+*Note sur la chaîne de caractères: exécuter cette commande avec 'The' retournerait aussi des lignes avec des mots comme Thesis.*
 
-#### Pour limiter à un mot, on peut passer un flag:
+Pour limiter à un mot, on peut passer un flag:
 ```bash
     $ grep -w The  haiku.txt
 ```
 
-#### On peut passer une phrase avec la chaîne de charactères entre guillemets:
+On peut passer une phrase avec la chaîne de caractères entre guillemets:
 ```bash
     $ grep -w "is not"  haiku.txt
 ```
 
-#### D'autres flags intéressant:
+D'autres flags intéressants:
 
 - **'-n'** retourne le numéro de ligne
-- **'-i'** ignore si les charactères sont en majuscule ou minuscule
-- **'-v'** inverse la recherche (sélectionne ceux ne contenant pas la chaîne de charactères)
+- **'-i'** ignore si les caractères sont en majuscule ou minuscule
+- **'-v'** inverse la recherche (sélectionne ceux ne contenant pas la chaîne de caractères)
 
 ## Utiliser des expressions régulières
 
-Les expressions régulières permettent de faire des recherches plus spécifique de séries de charactères. 
+Les expressions régulières permettent de faire des recherches plus spécifiques de séries de caractères. 
 Comme les wildcards **'\*'** et **'?'** utiliser au début pour lister des fichiers répondant à des conditions plus spécifiques.
 
-Par exemple trouver tous les lignes contenant des mots ayant la lettre 'o' en deuxième position:
+Par exemple trouver toutes les lignes contenant des mots ayant la lettre 'o' en deuxième position:
 ```bash
     $ grep -E '^.o'  haiku.txt
 ```
 
 ## Trouver des fichiers
 
-#### Trouver l'ensemble des fichiers du répertoire courant
+Trouver l'ensemble des fichiers du répertoire courant:
 ```bash
     $ find .
 ```
 
-#### Trouver l'ensemble des dossiers d'un répertoire
+Trouver l'ensemble des dossiers d'un répertoire:
 
 ```bash
     $ find . -type d
 ```
 
-#### Trouver l'ensemble des fichiers d'un répertoire
+Trouver l'ensemble des fichiers d'un répertoire:
 
 ```bash
     $ find . -type f
 ```
 
-#### Trouver les fichiers par leur nom
+Trouver les fichiers par leur nom:
 
 Ne pas faire:
 ```bash
     $ find . -name *.txt
 ```
 
-*Le wildcard exécutera en premier et un seul résultat sera retourner.*
+*Le wildcard exécutera en premier et un seul résultat sera retourné.*
 
 Pour obtenir l'ensemble des fichiers correspondant:
 ```bash
@@ -766,12 +770,12 @@ Pour obtenir l'ensemble des fichiers correspondant:
 ```
 *Le wildcard exécutera après la commande et non avant.*
 
-#### Compter les lignes avec des fichiers trouver:
+Compter les lignes avec des fichiers trouver:
 ```bash
     $ wc -l $(find . -name '*.txt')
 ```
 
-#### Utiliser 'grep' et 'find' ensemble:
+Utiliser 'grep' et 'find' ensemble:
 ```bash
     $ grep "FE" $(find . -name '*.txt')
 ```
@@ -788,13 +792,10 @@ Maintenant que les principes du Shell sont maîtrisés, vous pouvez aller voir (
 - [Efficiently scaling remote sensing image corrections with the CL and Python](../calling-cl-python/calling-cl-python-en.MD)
 
 
-Contenu initalement publié sur [mon site](zacharydeziel.com).
+Contenu initialement publié sur [mon site](zacharydeziel.com).
 
 ## Source du contenu:
 
 Gabriel Devenyi, Christina Koch, and Ashwin Srinath (eds): "Software
 Carpentry: The Unix Shell."  Version 2016.06, June 2016,
 https://github.com/swcarpentry/shell-novice, 10.5281/zenodo.57544.
-
-
-
