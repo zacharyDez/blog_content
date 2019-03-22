@@ -1,17 +1,30 @@
 # Introduction au shell et à la ligne de commande
 
-Contenu initalement publié sur [mon site](zacharydeziel.com)
+Contenu initalement publié sur [mon site](zacharydeziel.com).
 
+## Source du contenu
+
+La source du contenu suit l'approche développé par [Software Carpentry](https://software-carpentry.org/) 
+dont l'objectif est d'équiper des chercheurs avec les outils technologiques d'aujourd'hui. 
+L'ensemble du contenu de leurs leçons est Open Source. 
+
+Je remercie les contributeurs de l'organisation.
+
+Référence au bas du document. 
+
+## Cheat Sheet
+
+L'objectif du document est de servir comme référence après l'atelier d'introduction.
 
 ## Introduction au Shell
 
 ##### Question
 
-- C'est quoi la ligne de commande et pourquoi je devrais l'utiliser?
+> - C'est quoi la ligne de commande et pourquoi je devrais l'utiliser?
 
 ##### Objectifs:
-- Comprendre les liens entre les usagers et l'ordinateur
-- Comprendre quand et pourquoi les lignes de commandes sont plus adaptées que des interfaces graphiques
+> - Comprendre les liens entre les usagers et l'ordinateur
+> - Comprendre quand et pourquoi les lignes de commandes sont plus adaptées que des interfaces graphiques
 
 #### Contexte
 
@@ -75,14 +88,14 @@ Il est possible d'écrire des séquences de commandes dans des scripts pour avoi
 ## Naviguer des dossiers et des fichiers
 
 #### Questions
-- Comment se déplacer sur notre ordinateur?
-- Comment connaître les fichiers sur mon ordinateur?
-- Comment spécifier l'emplacement d'un dossier ou d'un fichier sur mon ordinateur?
+> - Comment se déplacer sur notre ordinateur?
+> - Comment connaître les fichiers sur mon ordinateur?
+> - Comment spécifier l'emplacement d'un dossier ou d'un fichier sur mon ordinateur?
 
 #### Objectifs
-- Expliquer les similarités et les différences entre un dossier et un fichier.
-- Traduire un path absolue en path relatif et vice-versa
-- Construire des paths qui identify des fichiers ou dossiers spécifique.
+> - Expliquer les similarités et les différences entre un dossier et un fichier.
+> - Traduire un path absolue en path relatif et vice-versa
+> - Construire des paths qui identify des fichiers ou dossiers spécifique.
 
 La partie du système d'opération (OS) qui s'occupe de la gestion de fichier se nomme le système de fichier. 
 Il organise nos données en fichiers ou en dossier. 
@@ -212,13 +225,13 @@ Les paths absolues sont donnés en fonction du répertoire racine (root) du syst
 ## Travailler avec des fichiers et des dossiers
 
 #### Questions
-- Comment créer, copier et supprimer des fichiers et dossiers?
-- Comment éditer des fichiers?
+> - Comment créer, copier et supprimer des fichiers et dossiers?
+> - Comment éditer des fichiers?
 
 #### Objectifs
-- Créer des fichiers qui correspondent à un diagramme.
-- Créer des fichiers de cette hiérachie en utilisant un éditeur.
-- Supprimer, copier et déplacer des fichiers et dossiers.
+> - Créer des fichiers qui correspondent à un diagramme.
+> - Créer des fichiers de cette hiérachie en utilisant un éditeur.
+> - Supprimer, copier et déplacer des fichiers et dossiers.
 
 ## Recommandation pour les noms de fichiers et de dossiers
 
@@ -328,13 +341,13 @@ S'il y a un fichier du même nom dans le répertoire de réception, il sera écr
 ## Filtres et pipes
 
 #### Questions: 
-- Comment combiner plusieurs commandes?
+> - Comment combiner plusieurs commandes?
 
 #### Objectifs
-- Rediriger la sortie d'une commande à un fichier
-- Traiter un fichier 
-- Construire un pipeline de traitement de plusieurs étapes
-- Comprendre la philosopie Unix 'small pieces, loosely joined'
+> - Rediriger la sortie d'une commande à un fichier
+> - Traiter un fichier 
+> - Construire un pipeline de traitement de plusieurs étapes
+> - Comprendre la philosopie Unix 'small pieces, loosely joined'
 
 ## Exemples de combinaison
 
@@ -472,15 +485,15 @@ Les contenus du fichiers sont seulement passés à la fonction
 ## Les boucles
 
 #### Questions
-- Comment performer les mêmes actions sur différents niveaux de fichiers?
+> - Comment performer les mêmes actions sur différents niveaux de fichiers?
 
 #### Objectifs
-- Écrire une boucle qui s'applique sur plusieurs fichiers distincts
-- Suivre les valeurs d'une variable durant l'exécution d'une boucle
-- Expliquer la différence entre le nom d'une variable et sa valeur
-- Expliquer pourquoi certains espaces et autres ponctuations ne devraient pas être utilisés
-- Démontrer comment obtenir les commandes récemment exécuter
-- Exécuter les commandes récemment utiliser sans les réécrire.
+> - Écrire une boucle qui s'applique sur plusieurs fichiers distincts
+> - Suivre les valeurs d'une variable durant l'exécution d'une boucle
+> - Expliquer la différence entre le nom d'une variable et sa valeur
+> - Expliquer pourquoi certains espaces et autres ponctuations ne devraient pas être utilisés
+> - Démontrer comment obtenir les commandes récemment exécuter
+> - Exécuter les commandes récemment utiliser sans les réécrire.
 
 ## Commandes/Exemples de boucles
 
@@ -653,13 +666,119 @@ done
 Une commande est toujours enregistrer dans l'historique des commandes avant d'être exécuter. 
 Ceci permet de comprendre plus facilement des erreurs lors de l'exécution.
 
+#### Questions
+> - Comment sauvegarder et réutiliser des commandes?
+
+#### Objectifs
+> - Écrire un script qui exécute une série de commande sur plusieurs fichiers distincts
+> - Exécuter un script à partir de la ligne de commande
+> - Écrire un script qui reçoit des intrants d'un usager à partir de la ligne de commande
+> - Créer des pipelines de traitement qui inclus plusieurs scripts
+
+
+## Trouver des éléments
+
+#### Questions
+> - Comment trouver des fichiers?
+> - Comment trouver des éléments dans des fichiers?
+
+#### Objectifs
+> - Utiliser 'grep' pour sélectionner des lignes de fichiers
+> - Utiliser 'find' pour trouver des fichiers 
+> - Utiliser la sortie d'une commande comme entré à une subséquente
+
+## Exemple trouver les lignes d'un document texte
+
+#### Montrer les contenus du fichiers 'haiku.txt'
+```bash
+    $ cd Desktop/data-shell/writing
+    $ cat haiku.txt
+```
+
+#### Trouver les lignes du fichier contenant une chaîne de charactères spécifique (pas juste un mot):
+```bash
+    $ grep The haiku.txt
+```
+
+*Note sur la chaîne de charactères: exécuter cette commande avec 'The' retournerait aussi des lignes avec des mots comme Thesis.*
+
+#### Pour limiter à un mot, on peut passer un flag:
+```bash
+    $ grep -w The  haiku.txt
+```
+
+#### On peut passer une phrase avec la chaîne de charactères entre guillemets:
+```bash
+    $ grep -w "is not"  haiku.txt
+```
+
+#### D'autres flags intéressant:
+
+- '-n' retourne le numéro de ligne
+- '-i' ignore si les charactères sont en majuscule ou minuscule
+- '-v' inverse la recherche (sélectionne ceux ne contenant pas la chaîne de charactères)
+
+## Utiliser des expressions régulières
+
+Les expressions régulières permettent de faire des recherches plus spécifique de séries de charactères. 
+Comme les wildcards '*' et '?' utiliser au début pour lister des fichiers répondant à des conditions plus spécifiques.
+
+Par exemple trouver tous les lignes contenant des mots ayant un 'o' en deuxième position:
+```bash
+    $ grep -E '^.o'  haiku.txt
+```
+
+## Trouver des fichiers
+
+#### Trouver l'ensemble des fichiers du répertoire courant
+```bash
+    $ find .
+```
+
+#### Trouver l'ensemble des dossiers d'un répertoire
+
+```bash
+    $ find . -type d
+```
+
+#### Trouver l'ensemble des fichiers d'un répertoire
+
+```bash
+    $ find . -type f
+```
+
+#### Trouver les fichiers par leur nom
+
+Ne pas faire:
+```bash
+    $ find . -name *.txt
+```
+
+*Le wildcard exécutera en premier et un seul résultat sera retourner.*
+
+Pour obtenir l'ensemble des fichiers correspondant:
+```bash
+    $ find . -name '*.txt'
+```
+*Le wildcard exécutera après la commande et non avant.*
+
+#### Compter les lignes avec des fichiers trouver:
+```bash
+    $ wc -l $(find . -name '*.txt')
+```
+
+#### Utiliser 'grep' et 'find' ensemble:
+```bash
+    $ grep "FE" $(find . -name '*.txt')
+```
+
 ## Conclusion
 
 La ligne de commande est un outil puissant qui permet d'automatiser des tâches complexes.
 
 Maîtriser le Shell permet de développer des solutions innovateurs en utilisant des programmes déjà existants. 
 
-Contenu initalement publié sur [mon site](zacharydeziel.com)
+Contenu initalement publié sur [mon site](zacharydeziel.com).
 
 ## Source du contenu:
 

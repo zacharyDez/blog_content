@@ -20,8 +20,8 @@
         <entry file="file://$PROJECT_DIR$/shell-cl-intro/shell-cl-intro-en.MD">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="475">
-                <caret line="635" column="94" selection-start-line="635" selection-start-column="94" selection-end-line="635" selection-end-column="94" />
+              <first_editor relative-caret-position="620">
+                <caret line="763" column="54" selection-start-line="763" selection-start-column="54" selection-end-line="763" selection-end-column="54" />
               </first_editor>
               <second_editor />
             </state>
@@ -66,6 +66,7 @@
       <find>.gitignore</find>
       <find>initialied</find>
       <find>going</find>
+      <find>Question</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -197,12 +198,12 @@
       <workItem from="1553176523288" duration="3333000" />
       <workItem from="1553186756155" duration="308000" />
       <workItem from="1553189646981" duration="6047000" />
-      <workItem from="1553261960150" duration="3615000" />
+      <workItem from="1553261960150" duration="6659000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26400000" />
+    <option name="totallyTimeSpent" value="29444000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1280" y="-280" width="1920" height="1080" extended-state="0" />
@@ -279,8 +280,8 @@
     <entry file="file://$PROJECT_DIR$/shell-cl-intro/shell-cl-intro-en.MD">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="475">
-            <caret line="635" column="94" selection-start-line="635" selection-start-column="94" selection-end-line="635" selection-end-column="94" />
+          <first_editor relative-caret-position="620">
+            <caret line="763" column="54" selection-start-line="763" selection-start-column="54" selection-end-line="763" selection-end-column="54" />
           </first_editor>
           <second_editor />
         </state>
