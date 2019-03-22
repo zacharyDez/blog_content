@@ -12,6 +12,10 @@ Je remercie les contributeurs de l'organisation.
 
 Référence au bas du document. 
 
+
+## Obtenir les données
+
+Le fichier compressé des données est disponible [ici](https://software-carpentry.org/).
 ## Cheat Sheet
 
 L'objectif du document est de servir comme référence après l'atelier d'introduction.
@@ -37,8 +41,8 @@ L'objectif du document est de servir comme référence après l'atelier d'introd
 Ils peuvent faire ses tâches de plusieurs méthodes différentes par l'entremise du clavier, d'une souris, d'un écran tactile ou même par reconnaissance de la voix.
 
 Nous sommes tous familiers avec des interfaces graphiques (GUI) qui consiste en des fenêtres, des icons et des pointeurs. 
-Ils sont faciles à apprendre and excellent pour exécuter des tâches simples. Particulièrement, lorsque qu'un simple 'clique' 
-peut se traduire en 'effectue cette tâche de haut niveau d'abstraction'. 
+Ils sont faciles à apprendre et excellent pour exécuter des tâches simples. 
+Ils permettent avec un usager, peu importe ses connaissances informatiques, d'exécuter une tâche.
 Cette magie dépend de plusieurs petites tâches simples and d'avoir accès à des programmes qui font ces tâches simples.
  
 Si vous désirez accomplir des tâches plus complexes et appliquer à un domaine spécifique, avoir des connaissances du shell sont nécessaires pour communiquer avec l'ordinateur.
@@ -49,15 +53,15 @@ Quand une commande est saisie, elle est évaluer et ensuite une sortie (résulta
 
 ## Définition du Shell
 
-Le Shell est un programme qui utilise d'autres programmes pour exécuter les calculs au lieu de l'effectuer lui même. 
+Le Shell est un programme qui utilise d'autres programmes pour exécuter les calculs au lieu de les effectuer lui même. 
 Il y a plusieurs Shell qui existe. 
 Bash est le shell par défaut des systèmes d'opérations Unix and de plusieurs extensions du Shell sur Windows.
 
-Python a un shell intéractif qui utilise le même principe: le shell appel l'interpréteur Python pour exécuter les commandes.
+Python a un shell intéractif qui utilise le même principe: le shell appel l'interpréteur Python pour faire les calculs.
 C'est un outil important pour expérimenter avec des solutions potentiels pour des programmes. 
 Très utilisé pour l'exploration de jeux de donnés.
 
-#TODO: Insérer image du Shell: example ls avec sortie
+![Exemple Shell](img/ex-cl-ls.png)
 
 ## Comment que le Shell comprend les commandes and ces arguments?
 
@@ -65,7 +69,7 @@ Chaque commande à un programme qui est stocké sur l'ordinateur et le shell pos
 pour les commandes (dans la fameuse variable PATH).
 
 #### Logic du Shell:
-1. Lire la commande saisie (séparation par espace et ';' entre les commandes)
+1. Lire la commande saisie (séparation par espace et **';'** entre les commandes)
 2. Évaluer la commande:
     - Trouver le programme de la commande
     - Exécuter la commande en y passant les arguments
@@ -107,11 +111,11 @@ Plusieurs commandes existent pour créer, inspecter, renommer et supprimer des f
 
 #### Notes différences de systèmes d'opérations
 
-Les machines windows séparent les dossiers par '\' et les machines Unix par '/'. 
+Les machines windows séparent les dossiers par **'\\'** et les machines Unix par **'/'**. 
 
 Certaines commandes peuvent ne pas être disponibles dans le shell de votre machine. 
 
-Le PowerShell disponible sur plusieurs machines, dont windows, [a des aliases pour plusieurs des commandes Unix](https://docs.microsoft.com/en-us/powershell/scripting/learn/using-familiar-command-names?view=powershell-6).
+Le PowerShell est une bonne option sur Windows: [alias commandes Unix](https://docs.microsoft.com/en-us/powershell/scripting/learn/using-familiar-command-names?view=powershell-6).
 
 #### Imprimer le répertoire de travail (print working directory)
 ```bash
@@ -128,7 +132,7 @@ Le PowerShell disponible sur plusieurs machines, dont windows, [a des aliases po
     $ ls -F
 ```
 
-Le flag -F permet de savoir quel type de contenu est lister (à l'aide du symbole '/')
+Le flag -F permet de savoir quel type de contenu est lister (à l'aide du symbole **'/'**)
 
 ```bash
     python-exception-handling-intro/ shell-cl-intro/
@@ -142,7 +146,7 @@ Obtenir le manuel de la commande: chercher unix man page.
     $ man ls
 ```
 
-Les manuels sont disponibles en ligne.
+Les manuels sont disponibles en ligne aussi.
 
 ## TODO: check if works on windows
 
@@ -209,7 +213,7 @@ Présenter les dossiers parents cachés:
 
 #### Le tilde: '~'
 
-Le ~ est interpréter comme référence au dossier mère de l'usager (home directory).
+Le **~** est interpréter comme référence au dossier mère de l'usager (home directory).
 
 ```bash
     $ cd ~/Desktop
@@ -238,7 +242,7 @@ Les paths absolues sont donnés en fonction du répertoire racine (root) du syst
 Des noms complexes rendent les commandes plus difficiles.
 
 1. N'utiliser pas d'espaces
-2. Ne commencez pas les noms avec un '-'
+2. Ne commencez pas les noms avec un **'-'**
 3. Éviter les symboles! Ils ont une autre référence en ligne de commande
 
 ## Commandes de modifications
@@ -280,9 +284,9 @@ Un dossier avec des contenus:
     $ rm -r mon_dossier
 ```
 
-Pour supprimer un dossier avec son contenu, on utilise la commande 'rm' et non 'rmdir'
+Pour supprimer un dossier avec son contenu, on utilise la commande **'rm'** et non **'rmdir'**
 
-*En ligne de commande, il n'y a pas de retour en arrière (Pas de corbeille)! faites attention lorsque vous supprimé.*
+*En ligne de commande, il n'y a pas de retour en arrière (Pas de corbeille)! Faites attention lorsque vous supprimé.*
 
 Plus sécuritaire:
 ```bash
@@ -318,9 +322,9 @@ S'il y a un fichier du même nom dans le répertoire de réception, il sera écr
 
 #### 'Wildcards'
 
-'*' remplace une chaîne de caractère.
+**'\*'** remplace une chaîne de caractère.
 
-'?' remplace un seul caractère.
+**'?'** remplace un seul caractère.
 
 #### Trouver tous les fichiers ayant une certaine extension:
 
@@ -398,7 +402,7 @@ Ou seulement le nombre de lignes:
     $ sort -n lenghts.txt
 ```
 
-*'n' utiliser pour spécifier que le champ est numérique*
+***'n'** utiliser pour spécifier que le champ est numérique*
 
 Le fichier n'est pas modifier. Le contenu imprimé est simplement classé.
 
@@ -466,7 +470,7 @@ Presque tous les outils Unix fonctionnent de cette façon:
 
 ## Rediriger des intrants
 
-Comme utiliser '>' pour rediriger les sorties vers un fichier, il est possible de lire les contenus d'un fichier avec '<'.
+Comme utiliser **'>'** pour rediriger les sorties vers un fichier, il est possible de lire les contenus d'un fichier avec **'<'**.
 
 Example: 
 
@@ -499,7 +503,7 @@ Les contenus du fichiers sont seulement passés à la fonction
 
 Aller dans le répertoire creatures.
 
-Le symbole '$' est utilisé pour désigner une variable. 
+Le symbole **'$'** est utilisé pour désigner une variable. 
 
 #### Retourner les trois premières lignes de plusieurs fichiers:
 ```bash
@@ -634,7 +638,7 @@ Il est maintenant possible d'obtenir les lignes désirées dans le milieu d'un f
 
 #### Commenter son code
 
-Comme en python, il est possible de commenter son code en utilisant des '#':
+Comme en python, il est possible de commenter son code en utilisant des **'#'**:
 
 # Select lines from the middle of a file.
 # Usage: bash middle.sh filename end_line num_lines
@@ -646,7 +650,7 @@ head -n "$2" "$1" | tail -n "$3"
 
 #### Passer un nombre non-défini d'arguments
 
-Le symbole '$@' est utilisé pour passer un nombre indéfini d'arguments à la ligne de commande.
+Le symbole **'$@'** est utilisé pour passer un nombre indéfini d'arguments à la ligne de commande.
 
 ```bash
 # Script to find unique species in csv files where species is the second data field
@@ -683,8 +687,8 @@ Ceci permet de comprendre plus facilement des erreurs lors de l'exécution.
 > - Comment trouver des éléments dans des fichiers?
 
 #### Objectifs
-> - Utiliser 'grep' pour sélectionner des lignes de fichiers
-> - Utiliser 'find' pour trouver des fichiers 
+> - Utiliser **'grep'** pour sélectionner des lignes de fichiers
+> - Utiliser **'find'** pour trouver des fichiers 
 > - Utiliser la sortie d'une commande comme entré à une subséquente
 
 ## Exemple trouver les lignes d'un document texte
@@ -714,16 +718,16 @@ Ceci permet de comprendre plus facilement des erreurs lors de l'exécution.
 
 #### D'autres flags intéressant:
 
-- '-n' retourne le numéro de ligne
-- '-i' ignore si les charactères sont en majuscule ou minuscule
-- '-v' inverse la recherche (sélectionne ceux ne contenant pas la chaîne de charactères)
+- **'-n'** retourne le numéro de ligne
+- **'-i'** ignore si les charactères sont en majuscule ou minuscule
+- **'-v'** inverse la recherche (sélectionne ceux ne contenant pas la chaîne de charactères)
 
 ## Utiliser des expressions régulières
 
 Les expressions régulières permettent de faire des recherches plus spécifique de séries de charactères. 
-Comme les wildcards '*' et '?' utiliser au début pour lister des fichiers répondant à des conditions plus spécifiques.
+Comme les wildcards **'\*'** et **'?'** utiliser au début pour lister des fichiers répondant à des conditions plus spécifiques.
 
-Par exemple trouver tous les lignes contenant des mots ayant un 'o' en deuxième position:
+Par exemple trouver tous les lignes contenant des mots ayant la lettre 'o' en deuxième position:
 ```bash
     $ grep -E '^.o'  haiku.txt
 ```
@@ -777,6 +781,12 @@ Pour obtenir l'ensemble des fichiers correspondant:
 La ligne de commande est un outil puissant qui permet d'automatiser des tâches complexes.
 
 Maîtriser le Shell permet de développer des solutions innovateurs en utilisant des programmes déjà existants. 
+
+Maintenant que les principes du Shell sont maîtrisés, vous pouvez aller voir (*contenu à venir si pas encore disponible*):
+- [Transformer des scripts Python pour la ligne de commande](../python-script-cl/python-script-cl-en.MD)
+- [Utiliser la ligne de commande dans des scripts Python](../calling-cl-python/calling-cl-python-en.MD)
+- [Efficiently scaling remote sensing image corrections with the CL and Python](../calling-cl-python/calling-cl-python-en.MD)
+
 
 Contenu initalement publié sur [mon site](zacharydeziel.com).
 
