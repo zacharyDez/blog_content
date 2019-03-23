@@ -55,7 +55,7 @@ while password_length < 10 or password_length > 20:
         print("You entered something other than a number")
 ```
 
-There's a lot going... Initially we set the password length to 1 to ensure that the *while* condition is entered at 
+There's a lot going on... Initially we set the password length to 1 to ensure that the *while* condition is entered at 
 least once. We then ask the user for his input. This is where an interesting example of exception handling goes on.
 
 Input in Python3 is considered as a string. 
