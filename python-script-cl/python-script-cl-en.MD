@@ -110,10 +110,10 @@ Ces scripts permettent de saisir les options et les arguments passés en ligne d
 et appel des procédures de traitement différents selon les options données.
 
 Il y a plusieurs méthodes pour identifier les options et les arguments passés en ligne de commandes.
-Quelque outils intéressants sont [getopt](https://docs.python.org/3/library/getopt.html) 
-et [argparse](https://docs.python.org/3/library/argparse.html).
+Quelques outils intéressants sont [*getopt*](https://docs.python.org/3/library/getopt.html) 
+et [*argparse*](https://docs.python.org/3/library/argparse.html).
 
-L'exemple présenté utilise getopt. La fonction getopt reçoit en arguments:
+L'exemple présenté utilise *getopt*. La fonction *getopt* reçoit en arguments:
  1. Les arguments de la ligne de commande sans traitement (argv[1:])
  2. Les options (flags) à surveiller
     - Exemple de flag: *-h*
@@ -122,7 +122,8 @@ L'exemple présenté utilise getopt. La fonction getopt reçoit en arguments:
 
 Il est aussi possible de spécifier des *long_options*, des options ayant plus qu'un caractère.
 
-Voici un exemple simple ayant les options d'aide, un fichier intrant et un fichier sortant.
+Voici un exemple simple ayant les options d'aide, un fichier intrant et un fichier sortant. 
+L'exemple peut être une référence pour des traitements plus avancés de fichiers.
 
 *arg_parse_ex.py*
 ```
@@ -170,7 +171,7 @@ if __name__ == "__main__":
 Un autre avantage de ces approches et que l'ordre des arguments n'est pas important. 
 L'option *-i* peut être passé avant ou après l'option *-o*.
 
-Notre exemple d'addition de nombre avec une option *-h*:
+## Notre exemple d'addition de nombre avec une option *-h*:
 
 *add_together.py*
 ```
@@ -214,8 +215,6 @@ Il y a des outils intéressant qui facilitent le développement d'outils de lign
 [click](https://click.palletsprojects.com/en/7.x/) est un package Python qui permet de développer des outils CLI avec le moins de code possible.
 
 Pour un exemple concret d'utilisation en géomatique d'un script Python en ligne de commande, allez voir [Traitement d'image avec gdal_calc]().
-
-
 
 # TODO: put urls
 

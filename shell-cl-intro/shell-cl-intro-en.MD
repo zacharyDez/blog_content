@@ -2,7 +2,7 @@
 
 French introduction to the command line. Based on the [Software Carpentry](https://software-carpentry.org/) approach.
 The objective of this introduction is to prepare students from the introduction to geospatial programming to more advance topics
-such as *(Currently working next subjects)*:
+such as *(Currently working on next subjects)*:
 
 - [Adapting Python Scripts for the command line](../python-script-cl/python-script-cl-en.MD)
 
