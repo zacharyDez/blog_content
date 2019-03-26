@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="63811e9f-5fc6-44b8-a1c1-54b36ba94288" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gdal-calc-python-ex/gdal-calc-python-ex.MD" beforeDir="false" afterPath="$PROJECT_DIR$/gdal-calc-python-ex/gdal-calc-python-ex.MD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calling-cl-python/calling-cl-python-en.MD" beforeDir="false" afterPath="$PROJECT_DIR$/calling-cl-python/calling-cl-python-en.MD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-script-cl/python-script-cl-en.MD" beforeDir="false" afterPath="$PROJECT_DIR$/python-script-cl/python-script-cl-en.MD" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,11 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gdal-calc-python-ex/gdal-calc-python-ex.MD">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="-242">
+              <first_editor relative-caret-position="1950">
                 <caret line="130" column="56" selection-start-line="130" selection-start-column="56" selection-end-line="130" selection-end-column="56" />
               </first_editor>
               <second_editor />
@@ -30,11 +31,32 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shell-cl-intro/shell-cl-intro-en.MD">
+        <entry file="file://$PROJECT_DIR$/calling-cl-python/calling-cl-python-en.MD">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="11130">
-                <caret line="742" column="12" selection-start-line="742" selection-start-column="6" selection-end-line="742" selection-end-column="12" />
+              <first_editor relative-caret-position="608">
+                <caret line="110" lean-forward="true" selection-start-line="110" selection-end-line="110" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/python-script-cl/python-script-cl-en.MD">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="345">
+                <caret line="23" column="18" lean-forward="true" selection-end-line="221" />
               </first_editor>
               <second_editor />
             </state>
@@ -95,6 +117,7 @@
       <find>Lire</find>
       <find>fonc</find>
       <find>find .</find>
+      <find>exemple</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -120,13 +143,13 @@
         <option value="$PROJECT_DIR$/python-script-cl/testy.py" />
         <option value="$PROJECT_DIR$/python-script-cl/add_together.py" />
         <option value="$PROJECT_DIR$/shell-cl-intro/shell-cl-intro-en.MD" />
-        <option value="$PROJECT_DIR$/calling-cl-python/calling-cl-python-en.MD" />
-        <option value="$PROJECT_DIR$/python-script-cl/python-script-cl-en.MD" />
         <option value="$PROJECT_DIR$/gdal-calc-python-ex/gdal-calc-python-ex.MD" />
+        <option value="$PROJECT_DIR$/python-script-cl/python-script-cl-en.MD" />
+        <option value="$PROJECT_DIR$/calling-cl-python/calling-cl-python-en.MD" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="x" value="1440" />
     <option name="y" value="-429" />
     <option name="width" value="1920" />
@@ -140,7 +163,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -167,6 +189,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -273,17 +296,19 @@
       <workItem from="1553461716217" duration="3280000" />
       <workItem from="1553526846741" duration="3558000" />
       <workItem from="1553532905824" duration="4033000" />
-      <workItem from="1553548403663" duration="3642000" />
+      <workItem from="1553548403663" duration="4294000" />
+      <workItem from="1553607530611" duration="1638000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66634000" />
+    <option name="totallyTimeSpent" value="68924000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1440" y="-429" width="1920" height="1057" extended-state="0" />
+    <frame x="1280" y="-280" width="1920" height="1080" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.09637912" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.09744409" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -297,7 +322,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.16373058" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.15643564" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32876712" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -341,13 +366,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="76" selection-start-line="25" selection-start-column="76" selection-end-line="25" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/python-script-cl/saluer.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -370,26 +388,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="990">
             <caret line="66" column="64" selection-start-line="66" selection-start-column="64" selection-end-line="66" selection-end-column="64" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/calling-cl-python/calling-cl-python-en.MD">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="480">
-            <caret line="32" column="24" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python-script-cl/python-script-cl-en.MD">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor>
-            <caret selection-end-line="27" />
           </first_editor>
           <second_editor />
         </state>
@@ -425,18 +423,45 @@
     <entry file="file://$PROJECT_DIR$/shell-cl-intro/shell-cl-intro-en.MD">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="11130">
+          <first_editor relative-caret-position="11128">
             <caret line="742" column="12" selection-start-line="742" selection-start-column="6" selection-end-line="742" selection-end-column="12" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/gdal-calc-python-ex/gdal-calc-python-ex.MD">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-242">
+          <first_editor relative-caret-position="1950">
             <caret line="130" column="56" selection-start-line="130" selection-start-column="56" selection-end-line="130" selection-end-column="56" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/calling-cl-python/calling-cl-python-en.MD">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="608">
+            <caret line="110" lean-forward="true" selection-start-line="110" selection-end-line="110" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python-script-cl/python-script-cl-en.MD">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="345">
+            <caret line="23" column="18" lean-forward="true" selection-end-line="221" />
           </first_editor>
           <second_editor />
         </state>
