@@ -1,4 +1,4 @@
-# Utiliser la ligne de commande dans des scripts Python
+# Utiliser la ligne de commande avec des scripts Python
 ## Introduction au module *subprocess* de Python
 
 ## Préparation
