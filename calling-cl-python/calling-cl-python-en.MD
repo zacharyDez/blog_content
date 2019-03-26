@@ -1,12 +1,13 @@
-# Introduction au module *subprocess* de Python
+# Utiliser la ligne de commande dans des scripts Python
+## Introduction au module *subprocess* de Python
 
 ## Préparation
 
-Si vous avez besoin d'un rappel sur la ligne de commande: [Introduction au Shell et à la ligne de commande](http://zacharydeziel.com/post/3)
+Si vous avez besoin d'un rappel sur la ligne de commande: [Introduction au Shell et à la ligne de commande](http://zacharydeziel.com/post/3).
 
 L'objectif de l'article est de continuer l'introduction à la ligne de commande et d'agir comme préparation aux deux prochains sujets:
 
-- [Adapting Python Scripts for the command line]().
+- [Adapting Python Scripts for the command line](http://zacharydeziel.com/post/5).
 - [Calling Python scripts to automate corrections to remote sensing images]().
  *En progrès, voir sur [Git](https://github.com/zacharyDez/gdal_dir_calc).*
 
@@ -21,7 +22,7 @@ Il permet d'exécuter des commandes du Shell et d'interagir avec les intrants/so
 
 Documentation sur le [module *subprocess*](https://docs.python.org/3/library/subprocess.html).
 
-Documentation sur la proposition du module *subprocess*: [PEP 324](https://www.python.org/dev/peps/pep-0324/)
+Documentation sur la proposition du module *subprocess*: [PEP 324](https://www.python.org/dev/peps/pep-0324/).
 
 ## Pourquoi appeler des commandes Shell avec Python?
 
@@ -109,7 +110,7 @@ La ligne de commande permet d'assembler des traitements simples en pipelines de 
 Les prochains sujets sont basés sur l'introduction au Shell et 
 à l'habileté d'exécuter les commandes Shell à l'intérieur de scripts Python.
 
-- [Adapter des scripts Python à la ligne de commande]()
+- [Adapter des scripts Python à la ligne de commande](http://zacharydeziel.com/post/5)
 
 - [Apprendre comment corriger des images de télédétection avec des scripts déjà existants et adapter à la ligne de commande]()
 
