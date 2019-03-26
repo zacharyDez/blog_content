@@ -118,7 +118,7 @@ L'exemple présenté utilise *getopt*. La fonction *getopt* reçoit en arguments
  2. Les options (flags) à surveiller
     - Exemple de flag: *-h*
     - Les flags qui reçoivent des arguments sont suivis de *':'* dans la fonction
-    - Exemple des options *help* (ne reçoit pas d'argument), *input* et *output*: _**'hi:o:'**_
+    - Exemple des options __*help*__ (ne reçoit pas d'argument), __*input*__ et __*output*__: _**'hi:o:'**_
 
 Il est aussi possible de spécifier des *long_options*, des options ayant plus qu'un caractère.
 
@@ -216,5 +216,6 @@ Il y a des outils intéressant qui facilitent le développement d'outils de lign
 
 Pour un exemple concret d'utilisation en géomatique d'un script Python en ligne de commande, allez voir [Traitement d'image avec gdal_calc]().
 
-# TODO: put urls
+*En progrès, voir sur [Git](https://github.com/zacharyDez/gdal_dir_calc).*
+
 
