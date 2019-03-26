@@ -110,6 +110,119 @@ concentrate on the logic of a problem.
 
 Check out [Calling the cl from python]() for a reminder on how to use the command line in python scripts (if you are familiar with French).
 
+## Directory images to NDVI - Command line
+
+This example presents a script that retrieves images from a base directory and calculates an NDVI for each image.
+
+As for individual images, this script could rapidly be adapted by changing the band numbers and the calculated expression
+to apply it to any other indice or transformation.
+
+If you have any questions do not hesitate to reach out.
+
+Example usage of the command:
+
+```bash
+python ndvi_dir.py -i 'input_dir' -o 'output_dir' --r_band=1 --nir_band=4;
+```
+
+Notable elements:
+    - get_gdal_utility function to retrieve path of gdal_calc.py (in site packages of conda environment)
+    - Use of f-strings to build command with our variables
+    - No hard-coding of file paths (cross-platform usage)
+
+```bash
+"""
+Author: Zachary Deziel, zachary.deziel@usherbooke.ca
+
+Objective: Calculate NDVI of all images in a directory
+
+Usage: ndiv_dir.py -i <input_folder> -o <output_folder> --r_band=<red_band_number> --nir_band=<nir_band_number>
+
+Example: python ndvi_dir.py -i 'input_dir' -o 'output_dir' --r_band=1 --nir_band=4;
+
+Requirements (see requirements.txt):
+    - Conda environment must be activated
+    - GDAL
+"""
+
+import sys
+import os
+import getopt
+from subprocess import run, Popen, PIPE, STDOUT
+import shlex
+
+import gdal
+
+def get_gdal_utility_path(utility_name):
+    # gdal is in site packages
+    # searching directory to start search for gdal_calc
+    conda_site_packages = os.path.dirname(os.path.realpath(gdal.__file__))
+
+    # find gdal_calc f
+    cmd = f"find {conda_site_packages} -name {utility_name}"
+
+    output = Popen(cmd, shell=True, stdin=PIPE, stdout=PIPE, stderr=STDOUT, close_fds=True)
+
+    # output in binary, decode as ascii
+    return output.stdout.read().strip().decode('ascii')
+
+
+def main(argv):
+    usage_message = "ndiv_dir.py -i <input_folder> -o <output_folder> --r_band=<red_band_number> --nir_band=<nir_band_number>"
+
+    # find options and arguments
+    try:
+        opts, args = getopt.getopt(argv, "hi:o:", longopts=['r_band=', 'nir_band='])
+
+    # print use of command if exception
+    except getopt.GetoptError:
+        print('Get Option Error.')
+        print(usage_message)
+        sys.exit(2)
+
+    for opt, arg in opts:
+        # print use of command
+        if opt in ["-h"]:
+            print(usage_message)
+            sys.exit()
+
+        # Set values from arguments
+        elif opt in ["-i"]:
+            input_folder = arg
+
+        elif opt in ["-o"]:
+            output_folder = arg
+
+        try:
+            if opt in ["--r_band"]:
+                red_band = int(arg)
+
+            elif opt in ["--nir_band"]:
+                nir_band = int(arg)
+
+        except ValueError:
+            print('Band numbers must be integers.')
+            print(usage_message)
+            sys.exit(2)
+
+    # Calculate NDVI for images
+    with os.scandir(input_folder) as folder:
+        for image in folder:
+            if image.name.endswith(('.png', '.jpg', '.jpeg', '.tif', '.geotiff')):
+                cmd = (
+                    f'python {get_gdal_utility_path("gdal_calc.py")}' \
+                        f' --calc="(asarray(B, dtype=float32)-asarray(A, dtype=float32)/(asarray(B, dtype=float32)+asarray(A, dtype=float32)))"' \
+                        f' -A {image.name} --A_band={red_band} -B {image.name} --B_band={nir_band}' \
+                        f' --outfile={os.path.join(output_folder, "ndvi_"+image.name)}'
+                )
+
+                run(shlex.split(cmd))
+
+
+if __name__ == "__main__":
+    main(sys.argv[1:])
+```
+
 ## Example: radiance to reflectance corrections
 
 If the interest of your application is the radiometric properties of your targets, correcting remote sensing images from radiance values 
